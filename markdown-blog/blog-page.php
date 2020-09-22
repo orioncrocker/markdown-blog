@@ -19,7 +19,7 @@ if (file_exists($page)) {
 <head>
     <!-- from orion's website -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" type="text/css" href="style.css?v=1">
 
     <meta property="og:title" content=<?php echo $pageTitle ?> />
     <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@ if (file_exists($page)) {
 
     <!-- from github blog site -->
     <title><?php echo $pageTitle ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
