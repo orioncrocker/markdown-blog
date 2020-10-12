@@ -1,0 +1,21 @@
+server {
+	root /your/site/root;
+
+  index blog-posts-list.php;
+	server_name yoursite.com;
+
+  location ~ ^/[^/]+\.php($|\?page=.*\.md/) {
+    fastcgi_pass unix:/var/run/php7.3-fpm-blog-site.sock;
+    fastcgi_index blog-page.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+  }
+  
+  location ~ (blog|^/$)(?!.+) {
+    rewrite ^/(.*?)/?$ /blog-posts-list.php;
+  }
+  
+  location ~ ^(.*\.(?!(pdf|html|css|jpg|jpeg|png)$))?[^.]*$ {
+    rewrite ^/(.*?)/?$ /blog-page.php?page=$1.md last;
+  }
+}

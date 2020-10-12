@@ -30,4 +30,8 @@
         $lines = array_slice(explode(PHP_EOL, $string), 0, $count);
         return implode(PHP_EOL, $lines);
     }
+
+    function getPostDate($filepath) {
+        return date('m.d.Y', filemtime($filepath));
+    }
 ?>

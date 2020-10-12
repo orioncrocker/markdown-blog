@@ -1,7 +1,7 @@
 # This is a test post
 
 This is a test post. Here are some things I'd like to test.
-I've got no clue what quantifies as the first three lines, so this will be a test.
+This is line 4.
 This is line 5.
 This is line 6.
 
@@ -28,10 +28,9 @@ Output:
     /'\_   _/`\
     \___)=(___/
 
-
 ```
 
-# This create another "title"
+# This creates another "title"
 
 **This text is bold**.
 
@@ -39,8 +38,8 @@ Output:
 
 > This text is blockquoted?
 
-###Image test:
+### Image test:
 
-![Tux](images/tux.png)
+![Tux](/images/tux.png)
 
 Link test: <https://orionc.dev>

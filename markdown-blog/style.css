@@ -1,106 +1,9 @@
-/* padding syntax:
-  padding: top right bottom left;
-*/
-
-header {
-  padding: 35px 0 30px 0;
-}
-
-nav {
-  padding-top: 10px;
-  font-size: 15px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-
-  max-width: 800px;
-  margin: auto;
-  padding: 0 20px 40px 20px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #AAA;
-  background-color: #151515;
-}
-
-code {
-  display: block;
-  color: #58ACFA;
-  border: 1px solid;
-  padding: 10px 20px 10px 20px;
-}
-
-footer {
-  bottom: 0;
-  font-size: 12px;
-  text-align: center;
-  padding: 60px 0 10px 0;
-  position: relative;
-}
-
-.header_logo {
-  display: flex;
-  box-sizing: inherit;
-}
-
-.header_logo::after {
-  content: "";
-  width: 100%;
-  flex-shrink: 1;
-  background: repeating-linear-gradient(90deg,#58ACFA,#58ACFA 2px,transparent 0,transparent 10px);
-}
-
-.logo {
-  display: block;
-  width: auto;
-  flex-shrink: 0;
-  background-color: #58ACFA;
-}
-
-.logo_text {
-  font-size: 25px;
-  padding: 0 14px 0 14px;
-  color: #000000;
-}
-
-.navbar a {
-  text-align: center;
-  padding-right: 5px;
-}
-
-#hl {
-  color: #58ACFA;
-  text-decoration: none;
-}
-
-.topic {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.portrait {
-  float: left;
-  padding: 0 20px 20px 0;
-}
-
 /*
 Markdown blog
 */
 
-.blog-post h1 a {
-  color: #58ACFA;
-  text-decoration: none;
-}
-
 .markdown {
   max-width: 800px;
-}
-
-.markdown h1 {
-  text-align: center;
 }
 
 .markdown h2,
@@ -109,9 +12,4 @@ Markdown blog
 .markdown h5,
 .markdown h6 {
     text-align: left;
-}
-
-.markdown a {
-  color: #58ACFA;
-  text-decoration: none;
 }
